@@ -1,0 +1,14 @@
+Google Chrome
+Firefox
+CMake
+Git For Windows
+Windows Terminal (Microsoft Store)
+HexChat (Microsot Store)
+Visual Studio Code
+Visual Studio 2019
+Beyond Compare
+Paint .NET
+Source Code Pro
+Slack
+Steam
+

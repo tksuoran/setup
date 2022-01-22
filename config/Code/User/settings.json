@@ -1,7 +1,21 @@
 {
+    "editor.copyWithSyntaxHighlighting": false,
     "editor.insertSpaces": true,
     "editor.formatOnPaste": false,
     "editor.tabSize": 4,
+    "[typescript]": {
+        "editor.tabSize": 2
+    },
+    "merge-conflict.diffViewPosition": "Beside",
+    "[typescriptreact]": {
+        "editor.tabSize": 2
+    },
+    "[python]": {
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ],
+        "editor.rulers": [120]
+    },
     "editor.renderWhitespace": "all",
     "editor.tokenColorCustomizations": {
         "strings": "#FFFF00",
@@ -18,7 +32,8 @@
             }
         }]
     },
-    "editor.fontFamily": "'Source Code Pro Semibold', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'Source Code Pro'",
+    "editor.fontWeight": 400,
     "editor.fontSize": 13,
     "editor.lineHeight": 16,
     "workbench.colorCustomizations": {
@@ -27,7 +42,11 @@
         "editor.selectionBackground": "#0000cc",
         "editor.selectionForeground": "#ffffff"
     },
-    "window.zoomLevel": 0,
+
+    //"clang-format.executable": "C:/git/clang-format.exe",
+    //"C_Cpp.clang_format_path": "C:/git/clang-format.exe",
+    "C_Cpp.clang_format_style": "file",
+
     "breadcrumbs.enabled": true,
     "editor.showFoldingControls": "always",
     "terminal.integrated.scrollback": 10000000,
@@ -35,35 +54,42 @@
     "editor.stablePeek": true,
     "editor.detectIndentation": false,
     "editor.dragAndDrop": false,
-    //"C_Cpp.clang_format_path": "/path/to/<clang-format-executable>",
-    "C_Cpp.clang_format_style": "/home/tsuoranta/.clang-format",
-    "C_Cpp.clang_format_fallbackStyle": "none",
-    "[cpp]": {
-        "editor.defaultFormatter": "xaver.clang-format"
-    },
-    "debug.console.fontFamily": "Source Code Pro Semibold",
+    "debug.console.fontFamily": "Source Code Pro",
     "debug.console.lineHeight": 16,
+
+    "cmake.generator": "Ninja",
+    //"cmake.buildArgs": ["-k 0"],
+    //"cmake.configureArgs": [
+    //    "-Wno-dev",
+    //    "-DEMBREE_ISPC_SUPPORT=FALSE",
+    //    "-DEMBREE_TASKING_SYSTEM=INTERNAL",
+    //    "-DEMBREE_TUTORIALS=OFF",
+    //    "-DEMBREE_STATIC_LIB=ON"
+    //],
+    "cmake.buildDirectory": "${workspaceFolder}/vscode-cmake-build",
+    "cmake.configureOnEdit": false,
+
     "cmake.configureOnOpen": false,
+
+    "files.associations": {
+        "*.log": "log"
+    },
     "logFileHighlighter.customPatterns": [
         {
-            "pattern": "gl\\:glBindFramebuffer",
-            "foreground": "#ff8800"
+            "pattern": "[_a-zA-Z]+::[_a-zA-Z]+()",
+            "foreground": "#aabbff"
         },
         {
-            "pattern": "gl\\:\\w+",
-            "foreground": "#eeccee"
+            "pattern": "[()=]",
+            "foreground": "#00cccc"
         },
         {
-            "pattern": "glDrawArraysInstanced",
-            "foreground": "#ffffff"
+            "pattern": "[0-9]",
+            "foreground": "#cccc88"
         },
         {
-            "pattern": "glDrawElementsInstanced",
-            "foreground": "#ffffff"
-        },
-        {
-            "pattern": "GL_[_A-Z0-9]*",
-            "foreground": "#ccff88"
+            "pattern": "0x[0-9a-f]+",
+            "foreground": "#cccc88"
         },
         {
             "pattern": "\\s[_a-z0-9]+.cpp\\:\\d+",
@@ -73,19 +99,6 @@
             "pattern": "\\[\\s*\\d+\\ms]\\s",
             "foreground": "#ccccee"
         },
-        {
-            "pattern": "Enter\\sfunction\\s",
-            "foreground": "#aaaaaa"
-        },
-        {
-            "pattern": "Leave\\sfunction\\s",
-            "foreground": "#aaaaaa"
-        },
-        {
-            "pattern": "----------------- frame \\d+ -----------------",
-            "foreground": "#ffffff8",
-            "background": "#000088"
-        }
     ],
     "editor.largeFileOptimizations": false,
     "window.titleBarStyle": "custom",
@@ -93,9 +106,30 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "git.alwaysShowStagedChangesResourceGroup": true,
     "editor.minimap.showSlider": "always",
-    "mesonbuild.configureOnOpen": true,
-    "csharp.referencesCodeLens.enabled": false,
     "workbench.editor.showTabs": false,
     "explorer.confirmDelete": false,
-    "clangd.path": "/home/tksuoran/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/10.0.0/clangd_10.0.0/bin/clangd"
+    // "highlight.regexes": {
+    //     "[^\\x00-\\x7F]":
+    //     [
+    //         { "color": "red" }
+    //     ]
+    // },
+    "highlight.regexes": {
+        "([^\\x00-\\x7F])": {
+            "decorations": {
+                "color": "red"
+            }
+        }
+    },
+    "editor.fontLigatures": "'ccmp' off",
+    "workbench.editorAssociations": {
+        "git-rebase-todo": "default"
+    },
+    "gitlens.advanced.fileHistoryFollowsRenames": true,
+
+    "workbench.startupEditor": "welcomePage",
+    "workbench.editor.untitled.hint": "hidden",
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    }
 }

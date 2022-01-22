@@ -8,6 +8,7 @@ Visual Studio Code
 Visual Studio 2019
 Beyond Compare
 Paint .NET
+Python
 Source Code Pro
 Slack
 Steam

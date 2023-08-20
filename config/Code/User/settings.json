@@ -34,7 +34,7 @@
     },
     "editor.fontFamily": "'Source Code Pro'",
     "editor.fontWeight": 400,
-    "editor.fontSize": 13,
+    "editor.fontSize": 11,
     "editor.lineHeight": 16,
     "workbench.colorCustomizations": {
         "editorCursor.foreground": "#ffaa00",

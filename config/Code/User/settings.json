@@ -3,7 +3,7 @@
     "editor.insertSpaces": true,
     "editor.formatOnPaste": false,
     "editor.tabSize": 4,
-    "window.zoomLevel": 0.9,
+	"explorer.excludeGitIgnore": false,
     "[typescript]": {
         "editor.tabSize": 2
     },
@@ -25,34 +25,41 @@
         "strings": "#FFFF00",
         "numbers": "#FFFF00",
         "textMateRules": [
-            {
-                "scope": "keyword.operator",
-                "settings": {
-                    "foreground": "#00FFFF",
-                }
-            },
-            {
-                "scope": "comment",
-                "settings": {
-                    "foreground": "#77aaff",
-                }
-            },
-            {
-                "scope": "meta.preprocessor",
-                "settings": {
-                    "foreground": "#77ff00",
-                }
-            }
+            { "scope": "keyword.operator",  "settings": { "foreground": "#00FFFF" } },
+            { "scope": "comment",           "settings": { "foreground": "#77aaff" } },
         ]
     },
-    "editor.fontFamily": "'Source Code Pro'",
-    "editor.fontWeight": 500,
-    "editor.fontSize": 12.7,
-    "editor.lineHeight": 13.5,
+
+    "editor.semanticTokenColorCustomizations": {
+        "rules": {
+            "macro": { "foreground": "#0ffc00" }
+        }
+    },
+    //"editor.fontFamily": "'Source Code Pro'",
+    "editor.fontFamily": "'Cascadia Mono SemiLight'",
+    "editor.fontWeight": 400,
+    "editor.fontSize": 12.4,
+    "editor.lineHeight": 12,
+    "workbench.colorCustomizations": {
+        "editor.background": "#212327",
+        "editorCursor.foreground": "#ffaa00",
+        "editorCursor.background": "#ff8800",
+        "editor.selectionBackground": "#0000cc",
+        "editor.selectionForeground": "#ffffff",
+        "diffEditor.removedTextBackground": "#33000033",
+        "diffEditor.insertedTextBackground": "#00330033",
+        "diffEditor.insertedLineBackground": "#22336866",   // rest are new
+        "diffEditor.removedLineBackground": "#72336a66",    
+        "diffEditorGutter.insertedLineBackground": "#223368ff",
+        "diffEditorGutter.removedLineBackground": "#72336aff",
+        "diffEditorOverview.insertedForeground": "#02b40b",
+        "diffEditorOverview.removedForeground": "#a10000"        
+    },
 
     //"clang-format.executable": "C:/git/clang-format.exe",
     //"C_Cpp.clang_format_path": "C:/git/clang-format.exe",
     "C_Cpp.clang_format_style": "file",
+    "C_Cpp.enhancedColorization": "enabled",
 
     "breadcrumbs.enabled": true,
     "editor.showFoldingControls": "always",
@@ -61,8 +68,10 @@
     "editor.stablePeek": true,
     "editor.detectIndentation": false,
     "editor.dragAndDrop": false,
-    "debug.console.fontFamily": "Source Code Pro",
-    "debug.console.lineHeight": 16,
+    //"debug.console.fontFamily": "Source Code Pro",
+    "debug.console.fontFamily": "'Cascadia Mono SemiLight'",
+    "debug.console.fontSize": 11,
+    "debug.console.lineHeight": 12,
 
     "cmake.generator": "Ninja",
     //"cmake.buildArgs": ["-k 0"],
@@ -113,7 +122,7 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "git.alwaysShowStagedChangesResourceGroup": true,
     "editor.minimap.showSlider": "always",
-    "workbench.editor.showTabs": false,
+    "workbench.editor.showTabs": "single",
     "explorer.confirmDelete": false,
     // "highlight.regexes": {
     //     "[^\\x00-\\x7F]":
@@ -135,17 +144,11 @@
     "gitlens.advanced.fileHistoryFollowsRenames": true,
 
     "workbench.startupEditor": "welcomePage",
-    "workbench.editor.untitled.hint": "hidden",
     "[cpp]": {
         "editor.defaultFormatter": "ms-vscode.cpptools"
     },
-    "hediet.vscode-drawio.resizeImages": null,
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.colorTheme": "Default Dark+",
-    "C_Cpp.errorSquiggles": "disabled",
-    "C_Cpp.dimInactiveRegions": false,
-    "workbench.colorCustomizations": {
-        "titleBar"
-        
-    }    
+    "hediet.vscode-drawio.resizeImages": null,
+    "workbench.editor.empty.hint": "hidden",
+    "cmake.showOptionsMovedNotification": false
 }

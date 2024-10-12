@@ -38,8 +38,8 @@
     //"editor.fontFamily": "'Source Code Pro'",
     "editor.fontFamily": "'Cascadia Mono SemiLight'",
     "editor.fontWeight": 400,
-    "editor.fontSize": 12.4,
-    "editor.lineHeight": 12,
+    "editor.fontSize": 11.1,
+    "editor.lineHeight": 11,
     "workbench.colorCustomizations": {
         "editor.background": "#212327",
         "editorCursor.foreground": "#ffaa00",
@@ -88,7 +88,9 @@
     "cmake.configureOnOpen": false,
 
     "files.associations": {
-        "*.log": "log"
+        "*.log": "log",
+        "*.tsl": "glsl",
+        "*.tslh": "glsl"
     },
     "logFileHighlighter.customPatterns": [
         {
@@ -150,5 +152,10 @@
     "security.workspace.trust.untrustedFiles": "open",
     "hediet.vscode-drawio.resizeImages": null,
     "workbench.editor.empty.hint": "hidden",
-    "cmake.showOptionsMovedNotification": false
+    "cmake.showOptionsMovedNotification": false,
+    "diffEditor.renderSideBySide": true,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ]
 }

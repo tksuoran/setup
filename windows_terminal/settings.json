@@ -36,6 +36,7 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+    "disableAnimations": true,
     "newTabMenu": 
     [
         {
@@ -46,21 +47,22 @@
     {
         "defaults": 
         {
+            "antialiasingMode": "cleartype",
             "closeOnExit": "graceful",
             "colorScheme": "Neure",
             "cursorColor": "#FFCC00",
             "cursorShape": "vintage",
             "font": 
             {
-                "face": "Source Code Pro",
-                "size": 11.0,
-                "weight": "semi-bold"
+                "face": "Cascadia Mono",
+                "size": 13
             },
             "hidden": false,
             "historySize": 9001,
-            "opacity": 70,
+            "opacity": 80,
             "startingDirectory": "C:\\git",
-            "useAcrylic": true
+            "useAcrylic": true,
+            "useAtlasEngine": true
         },
         "list": 
         [
@@ -126,22 +128,28 @@
                 "source": "Windows.Terminal.Wsl"
             },
             {
-                "guid": "{17bf3de4-5353-5709-bcf9-835bd952a95e}",
+                "guid": "{4a2d0cd3-1d31-5ec3-9f57-d2bfc13d84cd}",
                 "hidden": false,
-                "name": "Ubuntu-22.04",
+                "name": "Developer Command Prompt for VS 2022 [8]",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{bfd48f95-7ab7-5c1f-8abe-ffbb7ea1459e}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022 [8]",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{963ff2f7-6aed-5ce3-9d91-90d99571f53a}",
+                "hidden": false,
+                "name": "Ubuntu-24.04",
                 "source": "Windows.Terminal.Wsl"
             },
             {
-                "guid": "{4da5bad1-3124-5620-8ca5-a6293efcd4bb}",
+                "guid": "{d8e96812-b789-5068-a5ae-10b2fb53e95f}",
                 "hidden": false,
-                "name": "Developer Command Prompt for VS 2022 [Preview]",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{6208e5fe-67a3-5b05-8240-af50390e2d0c}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022 [Preview]",
-                "source": "Windows.Terminal.VisualStudio"
+                "name": "Ubuntu 24.04.1 LTS",
+                "source": "CanonicalGroupLimited.Ubuntu24.04LTS_79rhkp1fndgsc"
             }
         ]
     },
@@ -370,7 +378,7 @@
             "cyan": "#3A96DD",
             "foreground": "#FFFFFF",
             "green": "#26A269",
-            "name": "Ubuntu-22.04-ColorScheme",
+            "name": "Ubuntu-24.04-ColorScheme",
             "purple": "#881798",
             "red": "#C21A23",
             "selectionBackground": "#FFFFFF",
@@ -424,49 +432,6 @@
             "yellow": "#808000"
         }
     ],
-    "themes": 
-    [
-        {
-            "name": "legacyDark",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "dark",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacyLight",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "light",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacySystem",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "system",
-                "useMica": false
-            }
-        }
-    ]
+    "themes": [],
+    "useAcrylicInTabRow": true
 }

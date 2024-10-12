@@ -2,10 +2,25 @@ Google Chrome
 Firefox
 CMake
 Git For Windows
-Windows Terminal (Microsoft Store)
-HexChat (Microsot Store)
 Visual Studio Code
-Visual Studio 2019
+    Binary Viewer
+    C/C++
+    C/C++ Extension Pack
+    change-chase
+    CMake Tools
+    Draw.io integration
+    GitLens
+    glTF Tools
+    json-color-token
+    Output COlorizer
+    Python
+    Remote - SSH
+    WSL
+Visual Studio 2022
+    Smart Command Line Arguments
+    VSColorOutput64
+    Solution Colors
+    GLSL language integration
 Beyond Compare
 Paint .NET
 Python

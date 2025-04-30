@@ -1,0 +1,179 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste"
+        },
+        {
+            "command": "find",
+            "id": "User.find"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.A6751878"
+        }
+    ],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+    "disableAnimations": true,
+    "keybindings": 
+    [
+        {
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        }
+    ],
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "antialiasingMode": "cleartype",
+            "closeOnExit": "graceful",
+            "colorScheme": "Neure",
+            "cursorColor": "#FFCC00",
+            "cursorShape": "vintage",
+            "font": 
+            {
+                "face": "Cascadia Mono",
+                "size": 12
+            },
+            "hidden": false,
+            "historySize": 9001,
+            "opacity": 80,
+            "startingDirectory": "C:\\git",
+            "useAcrylic": true
+        },
+        "list": 
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": true,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
+                "name": "Git Bash",
+                "source": "Git"
+            },
+            {
+                "guid": "{d8e96812-b789-5068-a5ae-10b2fb53e95f}",
+                "hidden": false,
+                "name": "Ubuntu 24.04.1 LTS",
+                "source": "CanonicalGroupLimited.Ubuntu24.04LTS_79rhkp1fndgsc"
+            },
+            {
+                "guid": "{963ff2f7-6aed-5ce3-9d91-90d99571f53a}",
+                "hidden": true,
+                "name": "Ubuntu-24.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "hidden": false,
+                "name": "Visual Studio Debug Console",
+                "source": "VSDebugConsole"
+            },
+            {
+                "guid": "{d71dbfc6-5a8c-5e8e-b81c-4e7ff7a30826}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{5f36778f-faa9-5136-9b75-ff0a0b2e66b0}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{17bf3de4-5353-5709-bcf9-835bd952a95e}",
+                "hidden": false,
+                "name": "Ubuntu-22.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}",
+                "hidden": false,
+                "name": "Ubuntu 22.04.5 LTS",
+                "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#081828",
+            "black": "#0C0C0C",
+            "blue": "#88BBFF",
+            "brightBlack": "#888888",
+            "brightBlue": "#BBCCFF",
+            "brightCyan": "#CCFFFF",
+            "brightGreen": "#88FF88",
+            "brightPurple": "#FFCCFF",
+            "brightRed": "#FF8888",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFFCC",
+            "cursorColor": "#FFCC00",
+            "cyan": "#33FFFF",
+            "foreground": "#CCCCCC",
+            "green": "#33FF33",
+            "name": "Neure",
+            "purple": "#FF77FF",
+            "red": "#FF5555",
+            "selectionBackground": "#0000FF",
+            "white": "#CCCCCC",
+            "yellow": "#FFFF55"
+        }
+    ],
+    "themes": [],
+    "useAcrylicInTabRow": true
+}

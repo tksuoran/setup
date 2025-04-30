@@ -38,8 +38,8 @@
     //"editor.fontFamily": "'Source Code Pro'",
     "editor.fontFamily": "'Cascadia Mono SemiLight'",
     "editor.fontWeight": 400,
-    "editor.fontSize": 11.1,
-    "editor.lineHeight": 11,
+    "editor.fontSize": 13.0,
+    "editor.lineHeight": 13,
     "workbench.colorCustomizations": {
         "editor.background": "#212327",
         "editorCursor.foreground": "#ffaa00",

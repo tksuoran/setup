@@ -1,0 +1,15 @@
+[core]
+	editor = \"C:\\Users\\timo.suoranta\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+[user]
+	name = Timo Suoranta
+	email = tksuoran@gmail.com
+[alias]
+	l = log --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:'%C(bold red)%h %Cgreen%cd %C(bold blue)%<(16)%an %C(yellow)%d%Creset %s %Creset'
+[diff]
+	tool = bc
+[difftool "bc"]
+	path = c:/Program Files/Beyond Compare 5/bcomp.exe
+[merge]
+	tool = bc
+[mergetool "bc"]
+	path = c:/Program Files/Beyond Compare 5/bcomp.exe
